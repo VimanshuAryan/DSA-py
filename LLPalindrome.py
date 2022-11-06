@@ -1,8 +1,5 @@
 # 234 Palindrome Linked List
 
-from email import header
-
-
 def palindrome():
 
     # get to the middle
