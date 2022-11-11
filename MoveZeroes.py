@@ -10,3 +10,17 @@ def move(nums):
     print(nums)
 
 move(nums)
+
+# quick sort algo
+
+def move2(nums):
+
+    l = 0
+
+    for r in range(len(nums)):
+        if nums[r] != 0:
+            nums[r], nums[l] = nums[l], nums[r]
+            l += 1
+    return nums
+
+print(move2(nums))
