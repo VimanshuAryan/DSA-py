@@ -12,8 +12,9 @@ def productExceptSelf(nums):
         res[i] = prefix
         prefix *= nums[i]
         # print(res, prefix)
-    
+    # range(len(nums) -1, -1, -1) because stop point itself is not looped hence -1 and not 0
     for i in range(len(nums) -1, -1, -1):
+        print(i)
         res[i] *= postfix
         postfix *= nums[i]
 

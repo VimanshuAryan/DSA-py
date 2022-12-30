@@ -13,20 +13,23 @@ def stock(arr):
                 profit = max(profit, res)
     return profit
 
-print(stock(prices))
+# print(stock(prices))
 
-def profit(prices):
 
-    l,r = 0,1
-    profit = 0
-
-    while l < len(prices):
-
-        if prices[l] < prices[r]:
-            res = prices[r] - prices[l]
-            profit = max(res, profit)
+def maxProfit (prices):
+    left = 0
+    right = 1
+    max_profit=0
+    while right < len(prices):
+        
+        if prices[right]>prices[left]:
+        #we always need the left value to be smaller
+            profit=prices[right] - prices[left]
+            max_profit = max(profit,max_profit)
         else:
-            l = r
-        r += 1
+            left=right
+        right+=1
+    return max_profit
+        
 
-    return profit
+print(maxProfit(prices))
