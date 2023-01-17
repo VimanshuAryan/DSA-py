@@ -31,6 +31,7 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
+        from collections import deque 
         output = []
         q = deque()
         l,r = 0,0
@@ -46,3 +47,6 @@ class Solution(object):
                 l+=1
             r+=1
         return output
+
+
+
