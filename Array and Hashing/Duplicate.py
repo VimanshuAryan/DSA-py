@@ -14,3 +14,8 @@ def containesDuplicate(nums):
     return False
 
 print(containesDuplicate(nums))
+
+def duplicate(nums):
+
+    return len(set(nums)) != len(nums)
+print(duplicate(nums))

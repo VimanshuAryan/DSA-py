@@ -8,17 +8,18 @@ dict = {}
 #initializing the hashmap
 for i in range(len(nums)):
     dict[nums[i]] = i
-
 for i in range(len(nums)):
     req = target - nums[i]
     
     if req in dict and dict[req] != i:
         print ([i, dict[req]])
 
-#neetcode version
+# neetcode version
+# most efficient
 
 dict = {}
 for i, n in enumerate(nums):
+    
     req = target - n
     if req in dict:
         print([i, dict[req]])
