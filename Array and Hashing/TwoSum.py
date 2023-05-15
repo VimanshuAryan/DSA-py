@@ -18,6 +18,7 @@ for i in range(len(nums)):
 # most efficient
 
 dict = {}
+#for index, number in array nums
 for i, n in enumerate(nums):
     
     req = target - n
