@@ -22,8 +22,13 @@ def trap(height):
             l += 1
             maxLeft = max(maxLeft, height[l])
             res += (maxLeft - height[l])
+            print(maxLeft - height[l])
         else:
             r -= 1
             maxRight = max(maxRight, height[r])
-            res += (maxRight - height[r]) 
+            res += (maxRight - height[r])
+            print(maxRight - height[r]) 
     return res
+
+height = [0,1,0,2,1,0,1,3,2,1,2,1]
+print(trap(height))
