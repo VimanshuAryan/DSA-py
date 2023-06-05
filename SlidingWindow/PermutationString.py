@@ -1,7 +1,7 @@
 # 567 Permutation in string
 # check if permutation of s1 exists in s2
 # mind first goes to hashmap but can be done with arrays as shown
-# try doing it with hsshmap
+# try doing it with hashmap
 
 class Solution(object):
     def checkInclusion(self, s1, s2):
@@ -41,6 +41,8 @@ class Solution(object):
                 matches -= 1
             l+=1
         return matches == 26
-
-
-        
+    
+# s1 = "ab"
+# s2 = "eidbaooo"
+# for r in range(len(s1), len(s2)):
+#     print(r)
